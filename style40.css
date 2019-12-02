@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+}
+nav{
+    background-color:#005a53;
+    
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 100%;
+    
+   
+}
+    
+
+.dropdown{
+    background-color: whitesmoke;
+    background-size: cover
+    ;
+    padding:12px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black;
+    
+   }
+.dropdownlist{
+    position: relative;
+    
+    padding-top: 6px;
+    
+   }
+    
+.dropdown-content{
+    
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(211, 151, 151, 0.2);
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdownlist:hover .dropdown-content {
+    display: block;
+  }
+  
+.icons{
+    
+    padding-left: 200px;
+    padding-top: 6px;
+    word-spacing: 90px;
+    color: white;
+    
+    }
+    
+    .headerright{
+       padding: 2px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: 'PT Serif', serif;
+        font-size: 1.4em;
+        margin: auto;
+
+    }
+    .headerright h2{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+        color: white;
+    }
+    .kerala-image{
+    background-image: url("https://2.hlimg.com/images/stories/738X538/1_1537854809m.jpg");
+    height:500px;
+    width: 100%; 
+    background-position:left top;
+    background-repeat:no-repeat;
+    background-size:cover;
+    }
+    .Content-bar{
+        background-color:#005a53;
+        height: 50px;
+        margin-top: 0px;
+       
+    }
+    .Content-bar ul{
+        padding: 8px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .Content-bar ul li{
+        float: left;
+        list-style: none;
+        font-size: 20px;
+        font-style: bold;
+        color: white;
+        padding-: 5px;
+        margin-left: 150px;
+    }
+    .quote{
+        margin-top: 40px;
+        text-align: center;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+span{
+    color: blue;
+}
+.about-kerala{
+    background-color: whitesmoke;
+   border: 0.5px solid black;
+    height: 500px;
+    width: 700px;
+    box-shadow: 10px 10px 5px grey;
+    margin: auto;
+}
+.image{
+    min-width: 100%;
+    height: auto;
+}
+    
