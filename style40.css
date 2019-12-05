@@ -113,13 +113,137 @@ span{
 .about-kerala{
     background-color: whitesmoke;
    border: 0.5px solid black;
-    height: 500px;
+    height: 470px;
     width: 700px;
     box-shadow: 10px 10px 5px grey;
     margin: auto;
 }
-.image{
-    min-width: 100%;
-    height: auto;
+.info{
+    text-align: justify;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+   
 }
+.destinations{
+     background-color: whitesmoke;
+     border: 0.5px solid black;
+     height: 600px;
+     width: 700px;
+     box-shadow: 10px 10px 5px grey;
+     margin: auto;
+
+}
+
+
+.image-slide{
+    width: 700px;
+    height: 300px;
+    display: flex;
+    overflow-x: auto;
+}
+.slide {
+    width: 700px;
+    flex-shrink: 0;
+    height: 300px;
+  }
+#slide1{
+background-image: url("https://www.keralaholidays.com/uploads/blog/thumb/thekkady-wildlife-4.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+}  
+#slide2{
+    background-image: url("https://amazemytrip.com/wp-content/uploads/2019/02/Munnar-Tea-Plantation.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    }  
+    #slide3{
+        background-image: url("https://tour-package.weebly.com/uploads/2/5/9/7/25977875/__5616186_orig.jpg");
+        background-repeat:no-repeat;
+        background-size:cover;
+        }  
+           .headline{
+               text-align: center;
+               font-size: 1.6em;
+               font-family: 'PT Serif', serif;
+               
+           } 
+           .subheading{
+            text-align: center;
+            font-size: 1.5em;
+            font-family: 'PT Serif', serif;
+
+           }
+           .about-alleppey{
+            background-color: whitesmoke;
+            border: 0.5px solid black;
+             height: 550px;
+             width: 700px;
+             box-shadow: 10px 10px 5px grey;
+             margin: auto;
+
+           }
+           .Kochi{
+            background-color: whitesmoke;
+            border: 0.5px solid black;
+             height: 620px;
+             width: 700px;
+             box-shadow: 10px 10px 5px grey;
+             margin: auto;
+           }
+           .Wayanad{
+            background-color: whitesmoke;
+            border: 0.5px solid black;
+             height: 570px;
+             width: 700px;
+             box-shadow: 10px 10px 5px grey;
+             margin: auto;
+           }
+           .food{
+            
+                background-color: whitesmoke;
+                border: 0.5px solid black;
+                 height: 750px;
+                 width: 700px;
+                 box-shadow: 10px 10px 5px grey;
+                 margin: auto;
+           }
     
+              .sadya{
+                  border-bottom: 1px solid grey;
+                  overflow: hidden;
+                  
+                 }
+           .sadya img{
+               float: left;
+               padding-top: 0px;
+               margin-right: 7px;
+               
+               
+               
+           }
+           .sadya p{
+               width: 95%;
+               
+             
+           }
+           
+           #sadya-1{
+               margin-top: 1px;
+               text-align: center;
+           }
+           .dosa{
+            border-bottom: 1px solid grey;
+            overflow: hidden;
+           }
+           .dosa img{
+            float: left;
+            padding-top: 6px;
+            margin-right: 7px;
+           }
+           .dosa p{
+            width: 95%;
+           }
+           #dosa-1{
+            margin-top: 1px;
+            text-align: center;
+        }
