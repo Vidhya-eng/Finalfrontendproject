@@ -57,19 +57,21 @@ padding: 10px 17px 10px 5px;
   
 .icons{
     
-    margin-right: 300px;
+    margin-right: 150px;
     padding-top: 15px;
     word-spacing: 90px;
     color: white;
     cursor: pointer;
     
     }
-
+.call{
+    display: inline-block;
+}
 
     .number{
         display: none;
         color: red;
-        font-size: 1.5em;
+        font-size: 10px;
         font-weight: bold;
         
     }
@@ -77,13 +79,8 @@ padding: 10px 17px 10px 5px;
         display: block;
 
     }
-    #icon2{
-        position: absolute;
-        top: 20px;
-        right: 14px;
-        
-    }
-    
+
+   
 
     
 
@@ -104,14 +101,37 @@ padding: 10px 17px 10px 5px;
         text-align: center;
         color: white;
     }
-    .kerala-image{
-    background-image: url("https://2.hlimg.com/images/stories/738X538/1_1537854809m.jpg");
-    height:500px;
-    width: 100%; 
-    background-position:left top;
-    background-repeat:no-repeat;
-    background-size:cover;
+    .fling-minislide {
+        width:100%; 
+        height:0px; 
+        padding-bottom: 40%; 
+        overflow:hidden; 
+        position:relative; 
+        z-index: -1;
     }
+   .fling-minislide img{ 
+       position:absolute; 
+       animation:fling-minislide 20s infinite; 
+       opacity:0; 
+       width: 100%; 
+       height: auto;}
+
+@keyframes fling-minislide {
+    25%{opacity:1;} 
+    40%{opacity:0;}
+}
+.fling-minislide img:nth-child(4){
+    animation-delay:0s;
+}
+.fling-minislide img:nth-child(3){
+    animation-delay:5s;
+}
+.fling-minislide img:nth-child(2){
+    animation-delay:10s;
+}
+.fling-minislide img:nth-child(1){
+    animation-delay:15s;
+}
     .Content-bar{
         background-color:#005a53;
         height: 50px;
@@ -154,6 +174,8 @@ span{
     text-align: justify;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin-left: 5px;
    
 }
 .destinations{
@@ -311,6 +333,9 @@ background-size:cover;
         .enquiry{
             margin-left:500px;
         }
+        input[type="number"] {
+            width:280px;
+         }
 .footer{
     border-top: 1px solid black;
     height: 120px;
@@ -318,7 +343,7 @@ background-size:cover;
     background-color:#005a53;
 }
 .fa {
-    padding: 20px;
+    padding: 3px;
     font-size: 25px;
     width: 20px;
     text-align: center;
@@ -336,7 +361,10 @@ background-size:cover;
  
   .footer a{
       text-decoration: none;
-      margin-left: 250px;
+      
+  }
+  .footer .fa-facebook{
+      margin-left:580px;
   }
   .footer-heading{
       margin-top: 0px;
@@ -344,10 +372,10 @@ background-size:cover;
       color: white;
       font-family:'PT Serif', serif; 
       font-size: 1.3em;
-      margin-left: 550px;
+      margin-left: 510px;
   }
   #linktotop{
       color: white;
       text-decoration: none;
-      margin-left: 550px;
+      margin-left: 560px;
   }
