@@ -1,381 +1,390 @@
-body{
-    margin: 0;
-    box-sizing: border-box;
-}
-nav{
-    background-color:#005a53;
-    
-    display: flex;
-    flex-direction: row;
-    height: 60px;
-    width: 100%;
-    
-   
-}
-    
 
-.dropdown{
-    background-color: whitesmoke;
-    background-size: cover;
-   
-    cursor: pointer;
-    border-radius: 6px;
-    border: 1px solid black;
-    height: 50px;
-    width: 70px;
-    
-   }
-   .dropdown .fa-bars{
-padding: 10px 17px 10px 5px;
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
 
-   }
-.dropdownlist{
-    position: relative;
-    
-    padding-top: 6px;
-   
-    
-   }
-    
-.dropdown-content{
-    
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(211, 151, 151, 0.2);
+nav {
+  background-color: #005a53;
+
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 100%;
+  border-bottom: 1px solid black;
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.dropdown {
+  background-color: whitesmoke;
+  background-size: cover;
+
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid black;
+  height: 50px;
+  width: 70px;
+}
+.dropdown .fa-bars {
+  padding: 10px 17px 10px 5px;
+}
+.dropdownlist {
+  position: relative;
+
+  padding-top: 6px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #005a53;
+  min-width: 1500px;
+  box-shadow: 0px 8px 16px 0px rgba(211, 151, 151, 0.2);
 }
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .dropdownlist:hover .dropdown-content {
-    display: block;
-  }
-  
-.icons{
-    
-    margin-right: 150px;
-    padding-top: 15px;
-    word-spacing: 90px;
-    color: white;
-    cursor: pointer;
-    
-    }
-.call{
-    display: inline-block;
+  color: white;
+  margin-left: 590px;
+  margin-top: 40px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdownlist:hover .dropdown-content {
+  display: block;
 }
 
-    .number{
-        display: none;
-        color: red;
-        font-size: 10px;
-        font-weight: bold;
-        
-    }
-    .call:hover .number{
-        display: block;
+.icons {
+  padding-top: 15px;
+  word-spacing: 90px;
+  color: white;
+  cursor: pointer;
+}
+.call {
+  display: inline-block;
+}
 
-    }
+.number {
+  display: none;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+.call:hover .number {
+  display: block;
+}
 
-   
-
-    
-
-    
-    .headerright{
-       padding: 2px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-family: 'PT Serif', serif;
-        font-size: 1.4em;
-        margin: auto;
-
-    }
-    .headerright h2{
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-left: 250px;
-        text-align: center;
-        color: white;
-    }
-    .fling-minislide {
-        width:100%; 
-        height:0px; 
-        padding-bottom: 40%; 
-        overflow:hidden; 
-        position:relative; 
-        z-index: -1;
-    }
-   .fling-minislide img{ 
-       position:absolute; 
-       animation:fling-minislide 20s infinite; 
-       opacity:0; 
-       width: 100%; 
-       height: auto;}
+.headerright {
+  padding: 2px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Knewave', cursive;
+  font-size: 1.4em;
+  margin: auto;
+}
+.headerright h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  color: white;
+}
+.fling-minislide {
+  width: 100%;
+  height: 0px;
+  padding-bottom: 40%;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+.fling-minislide img {
+  position: absolute;
+  animation: fling-minislide 20s infinite;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+}
 
 @keyframes fling-minislide {
-    25%{opacity:1;} 
-    40%{opacity:0;}
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
 }
-.fling-minislide img:nth-child(4){
-    animation-delay:0s;
+.fling-minislide img:nth-child(4) {
+  animation-delay: 0s;
 }
-.fling-minislide img:nth-child(3){
-    animation-delay:5s;
+.fling-minislide img:nth-child(3) {
+  animation-delay: 5s;
 }
-.fling-minislide img:nth-child(2){
-    animation-delay:10s;
+.fling-minislide img:nth-child(2) {
+  animation-delay: 10s;
 }
-.fling-minislide img:nth-child(1){
-    animation-delay:15s;
+.fling-minislide img:nth-child(1) {
+  animation-delay: 15s;
 }
-    .Content-bar{
-        background-color:#005a53;
-        height: 50px;
-        margin-top: 0px;
-       
-    }
-    .Content-bar ul{
-        padding: 8px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    .Content-bar ul li{
-        float: left;
-        list-style: none;
-        font-size: 20px;
-        font-style: bold;
-        color: white;
-        padding-: 5px;
-        margin-left: 150px;
-    }
-    .quote{
-        margin-top: 40px;
-        text-align: center;
-        font-size: 25px;
-        font-family: Arial, Helvetica, sans-serif;
-        
-    }
-span{
-    color: blue;
+.Content-bar {
+  background-color: #005a53;
+  height: 50px;
+  margin-top: 0px;
 }
-.about-kerala{
-    background-color: whitesmoke;
-   border: 0.5px solid black;
-    height: 470px;
-    width: 700px;
-    box-shadow: 10px 10px 5px grey;
-    margin: auto;
+.Content-bar ul {
+  padding: 8px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-.info{
-    text-align: justify;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 90%;
-    margin-left: 5px;
-   
+.Content-bar ul li {
+  float: left;
+  list-style: none;
+  font-size: 20px;
+  font-style: bold;
+  color: white;
+  padding: 5px;
+  margin-left: 150px;
 }
-.destinations{
-     background-color: whitesmoke;
-     border: 0.5px solid black;
-     height: 600px;
-     width: 700px;
-     box-shadow: 10px 10px 5px grey;
-     margin: auto;
+.quote {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+span {
+  color: blue;
+}
+.about-kerala {
+  background-color: whitesmoke;
+  border: 0.5px solid black;
+  height: 570px;
+  width: 700px;
+  box-shadow: 10px 10px 5px grey;
+  margin: auto;
+}
+.about-kerala .info{
+  padding-top: 15px;
+}
+.info {
+  text-align: justify;
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  width: 90%;
+  color: #2c3543;
+  line-height: 22px;
+  margin-left: 5px;
+}
+.destinations {
+  background-color: whitesmoke;
+  border: 0.5px solid black;
+  height: 750px;
+  width: 700px;
+  box-shadow: 10px 10px 5px grey;
+  margin: auto;
+}
 
-}
-
-
-.image-slide{
-    width: 700px;
-    height: 300px;
-    display: flex;
-    overflow-x: auto;
+.image-slide {
+  width: 700px;
+  height: 300px;
+  display: flex;
+  overflow-x: auto;
 }
 .slide {
-    width: 700px;
-    flex-shrink: 0;
-    height: 300px;
-  }
-#slide1{
-background-image: url("https://www.keralaholidays.com/uploads/blog/thumb/thekkady-wildlife-4.jpg");
-background-repeat:no-repeat;
-background-size:cover;
-}  
-#slide2{
-    background-image: url("https://amazemytrip.com/wp-content/uploads/2019/02/Munnar-Tea-Plantation.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    }  
-    #slide3{
-        background-image: url("https://tour-package.weebly.com/uploads/2/5/9/7/25977875/__5616186_orig.jpg");
-        background-repeat:no-repeat;
-        background-size:cover;
-        }  
-           .headline{
-               text-align: center;
-               font-size: 1.6em;
-               font-family: 'PT Serif', serif;
-               
-           } 
-           .subheading{
-            text-align: center;
-            font-size: 1.5em;
-            font-family: 'PT Serif', serif;
+  width: 700px;
+  flex-shrink: 0;
+  height: 300px;
+}
+#slide1 {
+  background-image: url("https://www.keralaholidays.com/uploads/blog/thumb/thekkady-wildlife-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#slide2 {
+  background-image: url("https://amazemytrip.com/wp-content/uploads/2019/02/Munnar-Tea-Plantation.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#slide3 {
+  background-image: url("https://tour-package.weebly.com/uploads/2/5/9/7/25977875/__5616186_orig.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.headline {
+  text-align: center;
+  font-size: 1.6em;
+  font-family: 'Righteous', cursive;
+  color: #005a53;
+}
+.subheading {
+  text-align: center;
+  font-size: 2.0em;
+  font-family: 'Ceviche One', cursive;
+  color: #428bca;
+}
+.about-alleppey {
+  background-color: whitesmoke;
+  border: 0.5px solid black;
+  height: 600px;
+  width: 700px;
+  box-shadow: 10px 10px 5px grey;
+  margin: auto;
+}
+.Kochi {
+  background-color: whitesmoke;
+  border: 0.5px solid black;
+  height: 770px;
+  width: 700px;
+  box-shadow: 10px 10px 5px grey;
+  margin: auto;
+}
+.Wayanad {
+  background-color: whitesmoke;
+  border: 0.5px solid black;
+  height: 670px;
+  width: 700px;
+  box-shadow: 10px 10px 5px grey;
+  margin: auto;
+}
+.food {
+  background-color: whitesmoke;
+  border: 0.5px solid black;
+  height: 600px;
+  width: 880px;
+  box-shadow: 10px 10px 5px grey;
+  margin: auto;
+}
 
-           }
-           .about-alleppey{
-            background-color: whitesmoke;
-            border: 0.5px solid black;
-             height: 550px;
-             width: 700px;
-             box-shadow: 10px 10px 5px grey;
-             margin: auto;
+.sadya {
+  border-bottom: 1px solid grey;
+  overflow: hidden;
+}
+.sadya img {
+  float: left;
+  padding-top: 0px;
+  margin-right: 7px;
+}
+.sadya p {
+  width: 95%;
+}
 
-           }
-           .Kochi{
-            background-color: whitesmoke;
-            border: 0.5px solid black;
-             height: 620px;
-             width: 700px;
-             box-shadow: 10px 10px 5px grey;
-             margin: auto;
-           }
-           .Wayanad{
-            background-color: whitesmoke;
-            border: 0.5px solid black;
-             height: 570px;
-             width: 700px;
-             box-shadow: 10px 10px 5px grey;
-             margin: auto;
-           }
-           .food{
-            
-                background-color: whitesmoke;
-                border: 0.5px solid black;
-                 height: 610px;
-                 width: 700px;
-                 box-shadow: 10px 10px 5px grey;
-                 margin: auto;
-           }
-    
-              .sadya{
-                  border-bottom: 1px solid grey;
-                  overflow: hidden;
-                  
-                 }
-           .sadya img{
-               float: left;
-               padding-top: 0px;
-               margin-right: 7px;
-               
-               
-               
-           }
-           .sadya p{
-               width: 95%;
-               
-             
-           }
-           
-           #sadya-1{
-               margin-top: 1px;
-               text-align: center;
-           }
-           .dosa{
-            border-bottom: 1px solid grey;
-            overflow: hidden;
-           }
-           .dosa img{
-            float: left;
-            padding-top: 6px;
-            margin-right: 7px;
-           }
-           .dosa p{
-            width: 95%;
-           }
-           #dosa-1{
-            margin-top: 1px;
-            text-align: center;
-        }
-        .puttu{
-            
-            overflow: hidden;
-           }
-           .puttu img{
-            float: left;
-            padding-top: 4px;
-            margin-right: 7px;
-            
-            
-           }
-           .puttu p{
-            width: 95%;
-           }
-           #puttu-1{
-            margin-top: 1px;
-            text-align: center;
-        }
-        .kerala-map img {
-            margin-left: 300px;
-        }
-        
-        .kerala-map p{
-            width: 700px;
-            margin-left: 300px;
+#sadya-1 {
+  margin-top: 1px;
+  text-align: center;
+}
+.dosa {
+  border-bottom: 1px solid grey;
+  overflow: hidden;
+}
+.dosa img {
+  float: left;
+  padding-top: 6px;
+  margin-right: 7px;
+}
+.dosa p {
+  width: 95%;
+}
+#dosa-1 {
+  margin-top: 1px;
+  text-align: center;
+}
+.puttu {
+  overflow: hidden;
+}
+.puttu img {
+  float: left;
+  padding-top: 4px;
+  margin-right: 7px;
+}
+.puttu p {
+  width: 95%;
+}
+#puttu-1 {
+  margin-top: 1px;
+  text-align: center;
+}
+.kerala-map{
+  margin: auto;
+  border: 1px solid black;
+  width: 700px;
+  box-shadow: 10px 10px 5px grey;
 
+}
 
+.kerala-map p {
+  width: 600px;
+  margin-left: 20px;
+  
+}
+.enquiry {
+  
+  border: 1px solid black;
+  width: 600px;
+  height: 680px;
+  box-shadow: 10px 10px 5px grey;
+  margin: auto;
+  background-color:  #E6E6FA;
 
-        }
-        .enquiry{
-            margin-left:500px;
-        }
-        input[type="number"] {
-            width:280px;
-         }
-.footer{
-    border-top: 1px solid black;
-    height: 120px;
-    width: 100%;
-    background-color:#005a53;
+}
+.enquiry .headline{
+  color:#005a53;
+}
+.enquiry .enquiry-general{
+  margin-left: 150px;
+}
+input[type="number"] {
+  width: 280px;
+}
+input[type="submit"] {
+  background-color: #555;
+  color: #fff;
+  border-radius: 10px;
+  margin-left: 165px;
+  cursor: pointer;
+  width: 15em;  
+  height: 2em;
+  background-color:#1d6fef;
+
+}
+.footer {
+  border-top: 1px solid black;
+  height: 120px;
+  width: 100%;
+  background-color: #005a53;
 }
 .fa {
-    padding: 3px;
-    font-size: 25px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
+  padding: 3px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
 .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  } 
- 
-  .footer a{
-      text-decoration: none;
-      
-  }
-  .footer .fa-facebook{
-      margin-left:580px;
-  }
-  .footer-heading{
-      margin-top: 0px;
-      margin-bottom: 0px;
-      color: white;
-      font-family:'PT Serif', serif; 
-      font-size: 1.3em;
-      margin-left: 510px;
-  }
-  #linktotop{
-      color: white;
-      text-decoration: none;
-      margin-left: 560px;
-  }
+  background: #3b5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.footer a {
+  text-decoration: none;
+}
+.footer .fa-facebook {
+  margin-left: 580px;
+}
+.footer-heading {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: white;
+  font-family: "PT Serif", serif;
+  font-size: 1.3em;
+  margin-left: 510px;
+}
+#linktotop {
+  color: white;
+  text-decoration: none;
+  margin-left: 560px;
+
+
+
+}
