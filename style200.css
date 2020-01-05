@@ -1,0 +1,580 @@
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+  }
+  
+
+  #background{
+    background-color: #eee;
+    background-size: auto;
+ 
+
+  }
+  /* Header section */
+  
+  nav {
+    background-color: #005a53;;
+  
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .dropdown {
+    background-color: whitesmoke;
+    background-size: cover;
+  
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid black;
+    height: 50px;
+    width: 70px;
+  }
+  .dropdown .fa-bars {
+    padding: 10px 17px 10px 5px;
+  }
+  .dropdownlist {
+    position: relative;
+  
+    padding-top: 6px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #005a53;
+    min-width: 1500px;
+    box-shadow: 0px 8px 16px 0px rgba(211, 151, 151, 0.2);
+  }
+  .dropdown-content a {
+    color: white;
+    margin-left: 590px;
+    margin-top: 40px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdownlist:hover .dropdown-content {
+    display: block;
+  }
+  
+  .icons {
+    padding-top: 15px;
+    word-spacing: 90px;
+    color: white;
+    cursor: pointer;
+  }
+  .call {
+    display: inline-block;
+  }
+  
+  .number {
+    display: none;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .call:hover .number {
+    display: block;
+  }
+  /* Header Text */
+  
+  .headerright {
+    padding: 2px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Knewave', cursive;
+    font-size: 1.4em;
+    margin: auto;
+  }
+  .headerright h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+  }
+  /* Image Slider */
+  .fling-minislide {
+    width: 100%;
+    height: 0px;
+    padding-bottom: 40%;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+  }
+  .fling-minislide img {
+    position: absolute;
+    animation: fling-minislide 20s infinite;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  @keyframes fling-minislide {
+    25% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+  }
+  .fling-minislide img:nth-child(4) {
+    animation-delay: 3s;
+  }
+  .fling-minislide img:nth-child(3) {
+    animation-delay: 6s;
+  }
+  .fling-minislide img:nth-child(2) {
+    animation-delay: 9s;
+  }
+  .fling-minislide img:nth-child(1) {
+    animation-delay: 3s;
+  }
+  /* Navigation Bar */
+  .Content-bar {
+    background-color: #005a53;
+    height: 50px;
+    margin-top: 0px;
+  }
+  .Content-bar ul {
+    padding: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .Content-bar ul li {
+    float: left;
+    list-style: none;
+    font-size: 20px;
+    font-style: bold;
+    color: white;
+    padding: 5px;
+    margin-left: 150px;
+  }
+  /* Introduction with Gif */
+  
+
+  .polling_message {
+    color: white;
+    float: left;
+    margin-left: 6%;
+    padding-top: 125px;
+    animation: 3s linear 1s infinite alternate fadein;
+    font-family: 'Montserrat-bold', sans-serif;
+    font-size: 2.1rem;
+  }
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  .view_port {
+    background-image:url("https://media2.giphy.com/media/AocpNqI6aXtza/giphy.gif?cid=790b7611881946416324959bb9bec1d028e1fb8f76ce380c&rid=giphy.gif");
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+  }
+  
+  .cylon_eye {
+    background-color: red;
+    background-image: linear-gradient(to right,
+        rgba(0, 0, 0, .9) 25%,
+        rgba(0, 0, 0, .1) 50%,
+        rgba(0, 0, 0, .9) 75%);
+    color: white;
+    height: 10%;
+    width: 20%;
+    margin-top: 128px;
+  
+    -webkit-animation: 4s linear 0s infinite alternate move_eye;
+            animation: 4s linear 0s infinite alternate move_eye;
+  }
+  
+  @-webkit-keyframes move_eye { 
+      from { margin-left: -20%; 
+    } to 
+      { margin-left: 100%; 
+    }  
+    }
+          @keyframes move_eye {
+               from { margin-left: -20%; 
+            } to 
+            { margin-left: 100%; 
+            }  
+        } 
+  .quote {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  span {
+    color: blue;
+  }
+  /*Experience Kerala */
+  .experience-kerala{
+    background-image: url("https://media.giphy.com/media/fBDHuyZe7cEr9C67dT/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: 720px;
+    height: 600px;
+    margin-left: 300px;
+    width: 830px;
+  }
+  .Paradise{
+    color: white;
+    font-size: 1.4em;
+    line-height: 1.4;
+    color: white;
+    width: 82%;
+    text-align: justify;
+  }
+  #color{
+    color: blue;
+  }
+  .main{
+    padding-top: 4%;
+    padding-right: 190px;
+  }
+  .keraladetail{
+    text-transform: uppercase;
+    font-size: 1.8em;
+    text-align: center;
+    font-family:'Montserrat-bold', sans-serif; 
+
+  }
+     
+      
+  /* Kerala Overview */
+  
+  .about-kerala {
+    background-color: whitesmoke;
+    border: 0.5px solid black;
+    height: 600px;
+    width: 700px;
+    box-shadow: 10px 10px 5px grey;
+    margin: auto;
+    transform-origin: 50% 65%;
+  transition: transform 5s, filter 3s ease-in-out;
+  filter: brightness(150%);
+    
+  }
+  .about-kerala:hover{
+    filter: brightness(100%);
+    transform: scale(1.2);
+    }
+
+  .about-kerala .info{
+    padding-top: 15px;
+  }
+  .info {
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 90%;
+    color: #2c3543;
+    line-height: 22px;
+    margin-left: 5px;
+  }
+  /* Important Destinations */
+  .destinations {
+    background-color: whitesmoke;
+    border: 0.5px solid black;
+    height: 770px;
+    width: 700px;
+    box-shadow: 10px 10px 5px grey;
+    margin: auto;
+    visibility: visible; 
+    animation-delay: 0.6s; 
+    animation-name: zoomIn;
+    
+  
+  }
+  .animation{
+    transform-origin: 50% 65%;
+   transition: transform 5s, filter 3s ease-in-out;
+   filter: brightness(150%);
+
+  }
+  .animation:hover{
+    filter: brightness(100%);
+    transform: scale(1.2);
+
+  }
+  
+  .image-slide {
+    width: 700px;
+    height: 300px;
+    display: flex;
+    overflow-x: auto;
+  }
+  .slide {
+    width: 700px;
+    flex-shrink: 0;
+    height: 300px;
+  }
+  #slide1 {
+    background-image: url("https://www.keralaholidays.com/uploads/blog/thumb/thekkady-wildlife-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #slide2 {
+    background-image: url("https://amazemytrip.com/wp-content/uploads/2019/02/Munnar-Tea-Plantation.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #slide3 {
+    background-image: url("https://tour-package.weebly.com/uploads/2/5/9/7/25977875/__5616186_orig.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .headline {
+    text-align: center;
+    font-size: 2.4em;
+    font-family: 'Montserrat-bold', sans-serif;
+    color: #059016;
+  }
+  .subheading {
+    text-align: center;
+    font-size: 2.0em;
+    font-family: 'Montserrat-bold', sans-serif;
+    color: #005a53;
+  }
+  /* Alleppey */
+  .about-alleppey {
+    background-color: whitesmoke;
+    border: 0.5px solid black;
+    height: 650px;
+    width: 700px;
+    box-shadow: 10px 10px 5px grey;
+    margin: auto;
+  }
+  /* Kochi */
+  
+  .Kochi {
+    background-color: whitesmoke;
+    border: 0.5px solid black;
+    height: 770px;
+    width: 700px;
+    box-shadow: 10px 10px 5px grey;
+    margin: auto;
+  }
+  /* Wayanad */
+  .Wayanad {
+    background-color: whitesmoke;
+    border: 0.5px solid black;
+    height: 680px;
+    width: 700px;
+    box-shadow: 10px 10px 5px grey;
+    margin: auto;
+  }
+  /* About Food */
+  .food {
+    background-color: whitesmoke;
+    border: 0.5px solid black;
+    height: 660px;
+    width: 890px;
+    box-shadow: 10px 10px 5px grey;
+    margin: auto;
+  }
+  
+  .sadya {
+    border-bottom: 1px solid grey;
+    overflow: hidden;
+  }
+  .sadya img {
+    float: left;
+    padding-top: 0px;
+    margin-right: 7px;
+  }
+  .sadya p {
+    width: 95%;
+  }
+  
+  #sadya-1 {
+    margin-top: 1px;
+    text-align: center;
+  }
+  .dosa {
+    border-bottom: 1px solid grey;
+    overflow: hidden;
+  }
+  .dosa img {
+    float: left;
+    padding-top: 6px;
+    margin-right: 7px;
+  }
+  .dosa p {
+    width: 95%;
+  }
+  #dosa-1 {
+    margin-top: 1px;
+    text-align: center;
+  }
+  .puttu {
+    overflow: hidden;
+  }
+  .puttu img {
+    float: left;
+    padding-top: 4px;
+    margin-right: 7px;
+  }
+  .puttu p {
+    width: 95%;
+  }
+  #puttu-1 {
+    margin-top: 1px;
+    text-align: center;
+  }
+  /* Kerala Map */
+  .keralamap{
+    text-transform: uppercase;
+    font-size: 1.8em;
+    text-align: center;
+    font-family:'Montserrat-bold', sans-serif; 
+  }
+  #mapcolor{
+    color:#059016;
+  }
+  .font-icon{
+    background-color: #059016;
+    width: 500px;
+    height: 500px;
+  }
+  strong{
+    font-size: 1.2em;
+  }
+  .general{
+    color:white;
+    text-align: center;
+    
+  }
+  .general .fa{
+    font-size: 60px;
+    margin-top: 35px;
+    
+  }
+  .general a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .calendar{
+    background-color:darkgreen;
+    height: 170px;
+   
+ }
+   .edit{
+height: 150px;
+  }
+  rules{
+    height: 100px; 
+  }
+  
+  
+  .explore-kerala{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 105px;
+  }
+  
+  /* Enquiry Form */
+  
+  .enquiry {
+    
+    border: 1px solid black;
+    width: 600px;
+    height: 680px;
+    box-shadow: 10px 10px 5px grey;
+    margin: auto;
+    background-color:  #E6E6FA;
+  
+  }
+  .enquiry .headline{
+    color:#005a53;
+  }
+  .enquiry .enquiry-general{
+    margin-left: 150px;
+  }
+  input[type="number"] {
+    width: 280px;
+  }
+  input[type="submit"] {
+    background-color: #555;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 165px;
+    cursor: pointer;
+    width: 15em;  
+    height: 2em;
+    background-color:#1d6fef;
+  
+  }
+  /* Footer Section */
+  .footer {
+    border-top: 1px solid black;
+    height: 120px;
+    width: 100%;
+    background-color: #005a53;
+  }
+  .fa {
+    padding: 3px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  .fa-facebook {
+    background: #3b5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55acee;
+    color: white;
+  }
+  
+  .footer a {
+    text-decoration: none;
+  }
+  .footer .fa-facebook {
+    margin-left: 580px;
+  }
+  .footer-heading {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    font-family: "PT Serif", serif;
+    font-size: 1.3em;
+    margin-left: 510px;
+  }
+  #linktotop {
+    color: white;
+    text-decoration: none;
+    margin-left: 560px;
+  
+  
+  
+  }
+  @media (max-width: 900px){
+    nav{
+      text-align: center;
+      
+    }
+    .icons{
+      display: flex;
+      flex-direction: row;
+    }
+
+  }
+  
