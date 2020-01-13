@@ -566,7 +566,7 @@ height: 150px;
   
   
   }
-  @media (max-width: 500px){
+  @media (max-width: 400px){
     nav{
       text-align: center;
       
