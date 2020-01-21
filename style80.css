@@ -13,7 +13,8 @@ body {
     width: 100%;
     border-bottom: 1px solid black;
     position: fixed;
-  top: 0;
+    top: 0;
+    z-index: 1;
     
   }
   
@@ -139,7 +140,7 @@ body {
   position: absolute;
   right: 30px;
   top: 225px;
-  z-index: -1;
+  /*z-index: -1;*/
  }
  .content-left{
   margin-left: 70px;
